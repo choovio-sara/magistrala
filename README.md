@@ -91,6 +91,19 @@ curl -X GET http://localhost:8080/health
 
 For additional usage examples and advanced configurations, visit the [official documentation](https://docs.magistrala.abstractmachines.fr).
 
+## 🖥 Frontend Example
+
+A minimal React UI is available in the `frontend` directory. It communicates with the Magistrala HTTP services and supports user sign up and login.
+
+Start the backend services (for example using `make run args=-d`) and serve the UI with any static file server:
+
+```bash
+python3 -m http.server 3000 -d frontend
+```
+
+Open <http://localhost:3000> in your browser to try it out.
+
+
 
 ## 📚 Documentation
 
